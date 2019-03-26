@@ -1,20 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
+import MyImage from "../components/myImage"
 import SEO from "../components/seo"
+import { H1, Span, StyledP } from "../components/tags"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO
+      title="Home"
+      keywords={[
+        `portfolio`,
+        `web development`,
+        `gatsby`,
+        `application`,
+        `react`,
+      ]}
+    />
+    <H1>
+      ARNOLD<Span>SINKO</Span>
+    </H1>
+    <MyImage />
+    <StyledP>
+      I’m a Web developer with a B.S. in Computer Science from the University of
+      North Carolina at Charlotte. My focus is in creating responsive,
+      cross-browser, web applications using current industry standards.
+    </StyledP>
   </Layout>
 )
 
